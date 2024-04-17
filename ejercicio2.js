@@ -8,5 +8,5 @@
 // e. Calcular el promedio de números pares
 // Para este ejercicio se solicita trabajar con módulos.
 
-// import { ejecutarOperaciones } from "./modulo.js";
-// ejecutarOperaciones();
+import { ejecutarOperaciones } from "./modulo.js";
+ejecutarOperaciones();

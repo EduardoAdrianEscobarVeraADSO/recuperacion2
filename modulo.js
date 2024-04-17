@@ -42,17 +42,6 @@ function sumarNumeros(numeros) {
     }
     return suma;
 }
-
-function contarNumerosPrimos(numeros) {
-    let contador = 0;
-    for (let i = 0; i < numeros.length; i++) {
-        if (esPrimo(numeros[i])) {
-            contador++;
-        }
-    }
-    return contador;
-}
-
 function esPrimo(num) {
     if (num <= 1) return false;
     if (num <= 3) return true;
@@ -66,6 +55,16 @@ function esPrimo(num) {
     }
     return true;
 }
+function contarNumerosPrimos(numeros) {
+    let contador = 0;
+    for (let i = 0; i < numeros.length; i++) {
+        if (esPrimo(numeros[i])) {
+            contador++;
+        }
+    }
+    return contador;
+}
+
 
 function contarNumerosPares(numeros) {
     let contador = 0;
