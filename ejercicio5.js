@@ -10,21 +10,21 @@
 // para que el usuario lo solucione y continue realizando los cálculos básicos
 // de las matemáticas.
 
-// import { Calculadora } from "./modulo.js";
+import { Calculadora } from "./modulo.js";
 
-// let calc = new Calculadora();
-// while (true) {
-//   try {
-//     let a = parseFloat(prompt("introduzca el primer numero: "));
-//     let b = parseFloat(prompt("introduzca el segnudo numero: "));
-//     alert("resultado de la suma " + calc.suma(a, b));        
-//     console.log(calc.resta(a, b));       
-//     console.log(calc.multiplicacion(a, b)); 
-//     console.log(calc.division(a, b));     
+let calc = new Calculadora();
+while (true) {
+  try {
+    let a = parseFloat(prompt("introduzca el primer numero: "));
+    let b = parseFloat(prompt("introduzca el segnudo numero: "));
+    alert("resultado de la suma " + calc.suma(a, b));        
+    alert("resultado de la resta " + calc.resta(a, b));       
+    alert("resultado de la multiplicacion " + calc.multiplicacion(a, b)); 
+    alert("resultado de la division " + calc.division(a, b));     
   
-//   } catch (error) {
-//     alert(error.message);
-//     continue
-//   }
-//   break
-// }
+  } catch (error) {
+    alert(error.message);
+    continue
+  }
+  break
+}
